@@ -155,7 +155,7 @@ const spyObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.4 }
+  { threshold: 0, rootMargin: '-30% 0px -60% 0px' }
 );
 
 sections.forEach(section => spyObserver.observe(section));

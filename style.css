@@ -539,6 +539,7 @@ h1, h2, h3, h4 {
 .skill-icon {
   font-size: 2rem;
   margin-bottom: 16px;
+  color: var(--accent);
 }
 
 .skill-card h3 {
