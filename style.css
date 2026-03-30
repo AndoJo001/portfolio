@@ -792,6 +792,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: var(--transition);
+  color: var(--accent);
 }
 
 .contact-item:hover {
