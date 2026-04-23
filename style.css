@@ -671,6 +671,9 @@ h1, h2, h3, h4 {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card::after {
@@ -875,7 +878,7 @@ h1, h2, h3, h4 {
 }
 
 .project-links {
-  margin-top: 10px;
+  margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid var(--border);
 }
