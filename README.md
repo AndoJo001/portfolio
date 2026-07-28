@@ -69,7 +69,7 @@ Je construis des applications web robustes (React + Laravel), j'intègre des pai
 
 Disponible pour des missions **freelance** et collaborations **remote**.
 
-📧 **tahirisoaandoo@gmail.com** · 📱 **+261 32 25 607 24**
+**tahirisoaandoo@gmail.com** · **+261 32 25 607 24**
 
 <div align="center">
 
