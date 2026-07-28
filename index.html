@@ -1,425 +1,611 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ando Rajohna — Développeur Full-Stack</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="moi.png" />
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ando Rajohna — Développeur Full-Stack</title>
+    <meta
+      name="description"
+      content="Ando Rajohna — Développeur Full-Stack basé à Antananarivo, Madagascar. Spécialisé React, Laravel, Python et agents IA. Disponible pour missions freelance et remote."
+    />
+    <meta
+      name="keywords"
+      content="développeur web Madagascar, React Laravel, freelance développeur, agent IA, full-stack Antananarivo"
+    />
+    <meta name="author" content="Ando Rajohna" />
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="nav">
-    <a href="#hero" class="nav-logo">AR<span class="dot">.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact" class="nav-cta">Me contacter</a></li>
-    </ul>
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <!-- Open Graph — preview LinkedIn / WhatsApp / Facebook -->
+    <meta property="og:title" content="Ando Rajohna — Développeur Full-Stack" />
+    <meta
+      property="og:description"
+      content="Je construis des applications web robustes et des agents IA — du front soigné au back bien pensé."
+    />
+    <meta
+      property="og:image"
+      content="https://andorajohna.vercel.app/moi.jpg"
+    />
+    <meta property="og:url" content="https://andorajohna.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <!-- <div class="hero-bg-text">DEV</div> -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ando Rajohna — Développeur Full-Stack"
+    />
+    <meta
+      name="twitter:description"
+      content="Je construis des applications web robustes et des agents IA."
+    />
+    <meta
+      name="twitter:image"
+      content="https://andorajohna.vercel.app/moi.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="moi.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
+      <a href="#hero" class="nav-logo">AR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-    <div class="hero-content">
-      <p class="hero-tag reveal">Développeur Full-Stack · Madagascar 🇲🇬</p>
-      <h1 class="hero-title reveal">
-        <span class="line">Ando</span>
-        <span class="line accent">Rajohna</span>
-      </h1>
-      <p class="hero-sub reveal">
-        Je construis des applications web <em>robustes</em> et des agents IA — <br/>
-        du front soigné au back bien pensé.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#projects" class="btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn-ghost">Travaillons ensemble →</a>
-      </div>
-    </div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <!-- <div class="hero-bg-text">DEV</div> -->
 
-    <!-- PHOTO ICI -->
-    <div class="hero-photo reveal">
-      <img src="moi.jpg" alt="Ando Rajohna" />
-    </div>
-
-  </section>
-
-  <!-- ===== À PROPOS ===== -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-left">
-          <span class="section-label reveal">01 — À propos</span>
-          <h2 class="section-title reveal">Passionné de code,<br/><em>guidé par la rigueur</em></h2>
+      <div class="hero-content">
+        <p class="hero-tag reveal">Développeur Full-Stack · Madagascar 🇲🇬</p>
+        <h1 class="hero-title reveal">
+          <span class="line">Ando</span>
+          <span class="line accent">Rajohna</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Je construis des applications web <em>robustes</em> et des agents IA —
+          <br />
+          du front soigné au back bien pensé.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-ghost">Travaillons ensemble →</a>
         </div>
-        <div class="about-right">
-          <p class="about-text reveal">
-            Développeur junior basé à Antananarivo, je suis actuellement 
-            <strong>Responsable Technologique</strong> dans une startup en pleine 
-            transition vers l'IA, où j'encadre deux développeurs stagiaires.
-          </p>
-          <p class="about-text reveal">
-            Mon parcours couvre le développement full-stack (React + Laravel), 
-            l'intégration de paiement (Stripe), et le développement d'agents IA 
-            en Python. Je construis chaque projet avec une volonté de comprendre 
-            avant de coder — pas seulement faire fonctionner, mais <strong>bien faire</strong>.
-          </p>
-          <p class="about-text reveal">
-            En dehors du code : bassiste autodidacte et membre actif de mon 
-            église, où je suis le bassiste principal. La discipline musicale 
-            et technique se rejoignent.
-          </p>
-          <div class="about-stats reveal">
-            <div class="stat">
-              <span class="stat-number">2+</span>
-              <span class="stat-label">ans d'expérience</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">projets livrés</span>
-            </div>
-            <!-- <div class="stat">
+      </div>
+
+      <!-- PHOTO ICI -->
+      <div class="hero-photo reveal">
+        <img src="moi.jpg" alt="Ando Rajohna" />
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="section-label reveal">01 — À propos</span>
+            <h2 class="section-title reveal">
+              Passionné de code,<br /><em>guidé par la rigueur</em>
+            </h2>
+          </div>
+          <div class="about-right">
+            <p class="about-text reveal">
+              Développeur junior basé à Antananarivo, je suis actuellement
+              <strong>Responsable Technologique</strong> dans une startup en
+              pleine transition vers l'IA, où j'encadre deux développeurs
+              stagiaires.
+            </p>
+            <p class="about-text reveal">
+              Mon parcours couvre le développement full-stack (React + Laravel),
+              l'intégration de paiement (Stripe), et le développement d'agents
+              IA en Python. Je construis chaque projet avec une volonté de
+              comprendre avant de coder — pas seulement faire fonctionner, mais
+              <strong>bien faire</strong>.
+            </p>
+            <p class="about-text reveal">
+              En dehors du code : bassiste autodidacte et membre actif de mon
+              église, où je suis le bassiste principal. La discipline musicale
+              et technique se rejoignent.
+            </p>
+            <div class="about-stats reveal">
+              <div class="stat">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">ans d'expérience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">projets livrés</span>
+              </div>
+              <!-- <div class="stat">
               <span class="stat-number">2</span>
               <span class="stat-label">devs encadrés</span>
             </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== COMPÉTENCES ===== -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <span class="section-label reveal">02 — Compétences</span>
-      <h2 class="section-title reveal">Ce que je maîtrise</h2>
-
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="skill-icon"><i class="fi fi-tr-react"></i></div>
-          <h3>Frontend</h3>
-          <ul>
-            <li>React (Vite + Hooks)</li>
-            <li>Tailwind CSS</li>
-            <li>HTML · CSS · JavaScript</li>
-            <li>jQuery · Bootstrap</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon"><i class="fi fi-tr-tools"></i></div>
-          <h3>Backend</h3>
-          <ul>
-            <li>Laravel (PHP)</li>
-            <li>Flask (Python)</li>
-            <li>MySQL · SQLite</li>
-            <li>API REST · MVC</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon"><i class="fi fi-tr-user-robot"></i></div>
-          <h3>IA & Agents</h3>
-          <ul>
-            <li>Python 3.13</li>
-            <li>Agents IA (Groq, Claude)</li>
-            <li>Intégration d'API IA</li>
-            <li>Data Science (notions)</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon"><i class="fi fi-tr-rocket-lunch"></i></div>
-          <h3>Outils & Deploy</h3>
-          <ul>
-            <li>Git · GitHub</li>
-            <li>Vercel · Render</li>
-            <li>VS Code · Windows</li>
-            <li>Stripe (intégration)</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EXPÉRIENCE ===== -->
-  <section class="experience section" id="experience">
-    <div class="container">
-      <span class="section-label reveal">03 — Parcours</span>
-      <h2 class="section-title reveal">Expérience &amp; Formation</h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">2025 — présent</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Emploi</span>
-            <h3>Responsable Technologique</h3>
-            <p class="timeline-place">Startup (secteur IA & Web)</p>
-            <p>Gestion de l'équipe tech (2 stagiaires), pilotage de la 
-            transition vers les agents IA, développement de services web 
-            et digitaux.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Mars — Août 2025</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Stage</span>
-            <h3>Développeur Full-Stack</h3>
-            <p class="timeline-place">Ministère des Économies et Finances</p>
-            <p>Développement d'une application web de gestion de courriers 
-            administratifs (React JS / Laravel). Fonctionnalités : CRUD, 
-            statistiques par dates, gestion des utilisateurs, authentification.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Mars — Nov. 2024</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Formation</span>
-            <h3>Développeur Web Full-Stack</h3>
-            <p class="timeline-place">Nir'Info Ampandrana</p>
-            <p>Web design, JavaScript, PHP/MySQL back-end. 
-            Projet fil rouge : logiciel de gestion d'établissement scolaire.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">2024</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Diplôme</span>
-            <h3>Master I — Base de données & Génie logiciel</h3>
-            <p class="timeline-place">CNTEMAD Madagascar</p>
-            <p>Parcours spécialisé en architecture de données et génie logiciel.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Nov. 2024</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Formation</span>
-            <h3>Initiation au Codage</h3>
-            <p class="timeline-place">Orange Digital Center</p>
-            <p>Web (HTML, CSS, JS), Python, découverte de la Data Science et 
-            du Machine Learning.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-date">2020 — 2024</div>
-          <div class="timeline-content">
-            <span class="timeline-tag">Emploi</span>
-            <h3>Opérateur de Saisie</h3>
-            <p class="timeline-place">Vivetic Group</p>
-            <p>Traitement de données pour Bouygues Telecom et modélisation 
-            d'images pour Amazon.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJETS ===== -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <span class="section-label reveal">04 — Projets</span>
-      <h2 class="section-title reveal">Ce que j'ai construit</h2>
-
-      <div class="projects-grid">
-
-        <div class="project-card reveal featured">
-          <div class="project-meta">
-            <span class="project-tag">React · Laravel · Full-Stack</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3>Gestion de Courriers Administratifs</h3>
-          <p>Application web complète pour le Ministère des Économies et Finances. 
-          Suivi des courriers par date, statistiques visuelles, gestion multi-utilisateurs 
-          avec authentification sécurisée.</p>
-          <div class="project-stack">
-            <span>React JS</span><span>Laravel</span><span>MySQL</span><span>REST API</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-tag">PHP · MySQL · Back-end</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3>Logiciel de Gestion Scolaire</h3>
-          <p>Système complet de gestion d'établissement scolaire : élèves, enseignants, 
-          examens. Développé avec PHP/MySQL suivant l'architecture MVC.</p>
-          <div class="project-stack">
-            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-tag">Stripe · Paiement</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3>Intégration Stripe</h3>
-          <p>Projet freelance d'intégration de paiement en ligne via Stripe. 
-          Gestion des transactions, webhooks et interface de validation côté client.</p>
-          <div class="project-stack">
-            <span>Stripe API</span><span>JavaScript</span><span>Laravel</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-tag">React · Laravel · Full-Stack</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3>FlowTask — Gestionnaire de tâches</h3>
-          <p>Application Kanban full-stack avec CRUD complet, priorités, deadlines, 
-          filtres et modals animés. Mode démo intégré via localStorage.</p>
-          <div class="project-stack">
-            <span>React</span><span>Vite</span><span>Tailwind v4</span><span>Laravel</span>
-          </div>
-          <div class="project-links">
-            <a href="https://manageflowtask.vercel.app/" target="_blank" class="btn-project">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-tag">Agent IA · Python</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3>Agents IA conversationnels</h3>
-          <p>Développement d'agents IA avec gestion d'outils, mémoire de conversation 
-          et déploiement sur Render. Intégration Groq et Tavily pour la recherche web.</p>
-          <div class="project-stack">
-            <span>Python</span><span>Flask</span><span>Groq API</span><span>Render</span>
-          </div>
-          <div class="project-links">
-            <a href="https://agent-ia-web-by-andojotahiry.vercel.app/" target="_blank" class="btn-project">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-tag">React · Supabase · Full-Stack</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3>Sync — Planning collaboratif par votes</h3>
-          <p>Application collaborative où les utilisateurs proposent des topics, votent, 
-          et génèrent un planning automatique. Espaces privés, commentaires, 
-          notifications in-app et mise à jour en temps réel.</p>
-          <div class="project-stack">
-            <span>React</span><span>Supabase</span><span>Tailwind v4</span><span>Realtime</span>
-          </div>
-          <div class="project-links">
-            <a href="https://sync-organize.vercel.app/" target="_blank" class="btn-project">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <span class="section-label reveal">05 — Contact</span>
-      <h2 class="section-title reveal">Travaillons ensemble</h2>
-      <p class="contact-sub reveal">
-        Disponible pour des missions freelance et collaborations remote.<br/>
-        Réponse garantie sous 24h.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-links reveal">
-          <a href="mailto:tahirisoaandoo@gmail.com" class="contact-item">
-            <span class="contact-icon"><i class="fi fi-tr-envelope"></i></span>
-            <div>
-              <strong>Email</strong>
-              <p>tahirisoaandoo@gmail.com</p>
             </div>
-          </a>
-          <a href="tel:+261322560724" class="contact-item">
-            <span class="contact-icon"><i class="fi fi-tr-mobile-button"></i></span>
-            <div>
-              <strong>Téléphone</strong>
-              <p>+261 32 25 607 24</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <span class="section-label reveal">02 — Compétences</span>
+        <h2 class="section-title reveal">Ce que je maîtrise</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fi fi-tr-react"></i></div>
+            <h3>Frontend</h3>
+            <ul>
+              <li>React (Vite + Hooks)</li>
+              <li>Tailwind CSS</li>
+              <li>HTML · CSS · JavaScript</li>
+              <li>jQuery · Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fi fi-tr-tools"></i></div>
+            <h3>Backend</h3>
+            <ul>
+              <li>Laravel (PHP)</li>
+              <li>Flask (Python)</li>
+              <li>MySQL · SQLite</li>
+              <li>API REST · MVC</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fi fi-tr-user-robot"></i></div>
+            <h3>IA & Agents</h3>
+            <ul>
+              <li>Python 3.13</li>
+              <li>Agents IA (Groq, Claude)</li>
+              <li>Intégration d'API IA</li>
+              <li>Data Science (notions)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fi fi-tr-rocket-lunch"></i></div>
+            <h3>Outils & Deploy</h3>
+            <ul>
+              <li>Git · GitHub</li>
+              <li>Vercel · Render</li>
+              <li>VS Code · Windows</li>
+              <li>Stripe (intégration)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPÉRIENCE ===== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <span class="section-label reveal">03 — Parcours</span>
+        <h2 class="section-title reveal">Expérience &amp; Formation</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2025 — présent</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Emploi</span>
+              <h3>Responsable Technologique</h3>
+              <p class="timeline-place">Startup (secteur IA & Web)</p>
+              <p>
+                Gestion de l'équipe tech (2 stagiaires), pilotage de la
+                transition vers les agents IA, développement de services web et
+                digitaux.
+              </p>
             </div>
-          </a>
-          <!-- <a href="https://github.com/" target="_blank" class="contact-item">
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">Mars — Août 2025</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Stage</span>
+              <h3>Développeur Full-Stack</h3>
+              <p class="timeline-place">Ministère des Économies et Finances</p>
+              <p>
+                Développement d'une application web de gestion de courriers
+                administratifs (React JS / Laravel). Fonctionnalités : CRUD,
+                statistiques par dates, gestion des utilisateurs,
+                authentification.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">Mars — Nov. 2024</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Formation</span>
+              <h3>Développeur Web Full-Stack</h3>
+              <p class="timeline-place">Nir'Info Ampandrana</p>
+              <p>
+                Web design, JavaScript, PHP/MySQL back-end. Projet fil rouge :
+                logiciel de gestion d'établissement scolaire.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Diplôme</span>
+              <h3>Master I — Base de données & Génie logiciel</h3>
+              <p class="timeline-place">CNTEMAD Madagascar</p>
+              <p>
+                Parcours spécialisé en architecture de données et génie
+                logiciel.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">Nov. 2024</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Formation</span>
+              <h3>Initiation au Codage</h3>
+              <p class="timeline-place">Orange Digital Center</p>
+              <p>
+                Web (HTML, CSS, JS), Python, découverte de la Data Science et du
+                Machine Learning.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2020 — 2024</div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Emploi</span>
+              <h3>Opérateur de Saisie</h3>
+              <p class="timeline-place">Vivetic Group</p>
+              <p>
+                Traitement de données pour Bouygues Telecom et modélisation
+                d'images pour Amazon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <span class="section-label reveal">04 — Projets</span>
+        <h2 class="section-title reveal">Ce que j'ai construit</h2>
+
+        <div class="projects-grid">
+          <div class="project-card reveal featured">
+            <div class="project-meta">
+              <span class="project-tag">React · Laravel · Full-Stack</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Gestion de Courriers Administratifs</h3>
+            <p>
+              Application web complète pour le Ministère des Économies et
+              Finances. Suivi des courriers par date, statistiques visuelles,
+              gestion multi-utilisateurs avec authentification sécurisée.
+            </p>
+            <div class="project-stack">
+              <span>React JS</span><span>Laravel</span><span>MySQL</span
+              ><span>REST API</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">PHP · MySQL · Back-end</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Logiciel de Gestion Scolaire</h3>
+            <p>
+              Système complet de gestion d'établissement scolaire : élèves,
+              enseignants, examens. Développé avec PHP/MySQL suivant
+              l'architecture MVC.
+            </p>
+            <div class="project-stack">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span
+              ><span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">Stripe · Paiement</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Intégration Stripe</h3>
+            <p>
+              Projet freelance d'intégration de paiement en ligne via Stripe.
+              Gestion des transactions, webhooks et interface de validation côté
+              client.
+            </p>
+            <div class="project-stack">
+              <span>Stripe API</span><span>JavaScript</span><span>Laravel</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">React · Laravel · Full-Stack</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>FlowTask — Gestionnaire de tâches</h3>
+            <p>
+              Application Kanban full-stack avec CRUD complet, priorités,
+              deadlines, filtres et modals animés. Mode démo intégré via
+              localStorage.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Vite</span><span>Tailwind v4</span
+              ><span>Laravel</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://manageflowtask.vercel.app/"
+                target="_blank"
+                class="btn-project"
+              >
+                Voir le projet →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">Agent IA · Python</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Agents IA conversationnels</h3>
+            <p>
+              Développement d'agents IA avec gestion d'outils, mémoire de
+              conversation et déploiement sur Render. Intégration Groq et Tavily
+              pour la recherche web.
+            </p>
+            <div class="project-stack">
+              <span>Python</span><span>Flask</span><span>Groq API</span
+              ><span>Render</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://agent-ia-web-by-andojotahiry.vercel.app/"
+                target="_blank"
+                class="btn-project"
+              >
+                Voir le projet →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">React · Supabase · Full-Stack</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Sync — Planning collaboratif par votes</h3>
+            <p>
+              Application collaborative où les utilisateurs proposent des
+              topics, votent, et génèrent un planning automatique. Espaces
+              privés, commentaires, notifications in-app et mise à jour en temps
+              réel.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Supabase</span><span>Tailwind v4</span
+              ><span>Realtime</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://sync-organize.vercel.app/"
+                target="_blank"
+                class="btn-project"
+              >
+                Voir le projet →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <span class="section-label reveal">05 — Services</span>
+        <h2 class="section-title reveal">Ce que je propose</h2>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon"><i class="fi fi-tr-browser"></i></div>
+            <h3>Site vitrine & Landing page</h3>
+            <p>
+              Un site rapide, responsive et soigné pour présenter votre
+              activité, attirer des clients et laisser une première impression
+              mémorable.
+            </p>
+            <ul class="service-features">
+              <li>Design sur mesure</li>
+              <li>100% responsive</li>
+              <li>Optimisé SEO</li>
+              <li>Déployé et livré clé en main</li>
+            </ul>
+            <a href="#contact" class="service-cta">Démarrer un projet →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-number">02</div>
+            <div class="service-icon"><i class="fi fi-tr-settings"></i></div>
+            <h3>Application web sur mesure</h3>
+            <p>
+              Dashboard, gestion interne, système CRUD complet avec
+              authentification. Je transforme vos processus métier en outils
+              digitaux efficaces.
+            </p>
+            <ul class="service-features">
+              <li>React + Laravel</li>
+              <li>Authentification & rôles</li>
+              <li>Base de données structurée</li>
+              <li>Interface intuitive</li>
+            </ul>
+            <a href="#contact" class="service-cta">Démarrer un projet →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon"><i class="fi fi-tr-robot"></i></div>
+            <h3>Intégration & Assistant IA</h3>
+            <p>
+              J'intègre un assistant IA dans votre application — chatbot métier,
+              automatisation de tâches, connexion à vos données et APIs tierces.
+            </p>
+            <ul class="service-features">
+              <li>Chatbot sur mesure</li>
+              <li>Intégration Stripe & APIs</li>
+              <li>Agent IA avec vos données</li>
+              <li>Stack Python + Flask + Groq</li>
+            </ul>
+            <a href="#contact" class="service-cta">Démarrer un projet →</a>
+          </div>
+        </div>
+
+        <div class="services-note reveal">
+          <!-- <p>
+            💬 Chaque projet est discuté ensemble — délais, budget et périmètre
+            adaptés à vos besoins. <a href="#contact">Parlons-en →</a>
+          </p> -->
+          <p>
+            Chaque projet est discuté ensemble — délais, budget et périmètre
+            adaptés à vos besoins. <a href="#contact">Parlons-en →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <span class="section-label reveal">06 — Contact</span>
+        <h2 class="section-title reveal">Travaillons ensemble</h2>
+        <p class="contact-sub reveal">
+          Disponible pour des missions freelance et collaborations remote.<br />
+          Réponse garantie sous 24h.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <a href="mailto:tahirisoaandoo@gmail.com" class="contact-item">
+              <span class="contact-icon"
+                ><i class="fi fi-tr-envelope"></i
+              ></span>
+              <div>
+                <strong>Email</strong>
+                <p>tahirisoaandoo@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+261322560724" class="contact-item">
+              <span class="contact-icon"
+                ><i class="fi fi-tr-mobile-button"></i
+              ></span>
+              <div>
+                <strong>Téléphone</strong>
+                <p>+261 32 25 607 24</p>
+              </div>
+            </a>
+            <!-- <a href="https://github.com/" target="_blank" class="contact-item">
             <span class="contact-icon"><i class="fi fi-tr-octopus"></i></span>
             <div>
               <strong>GitHub</strong>
               <p>Voir mes repositories</p>
             </div>
           </a> -->
-          <a href="https://www.linkedin.com/in/ando-rajohna" target="_blank" class="contact-item">
-            <span class="contact-icon"><i class="fi fi-tr-briefcase"></i></span>
-            <div>
-              <strong>LinkedIn</strong>
-              <p>Mon profil professionnel</p>
-            </div>
-          </a>
-        </div>
+            <a
+              href="https://www.linkedin.com/in/ando-rajohna"
+              target="_blank"
+              class="contact-item"
+            >
+              <span class="contact-icon"
+                ><i class="fi fi-tr-briefcase"></i
+              ></span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>Mon profil professionnel</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="contact-form-wrapper reveal">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Nom</label>
-              <input type="text" id="name" placeholder="Votre nom" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="votre@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary full-width">
-              Travaillons ensemble →
-            </button>
-            <p class="form-note" id="formNote"></p>
-          </form>
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Votre nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Décrivez votre projet..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary full-width">
+                Travaillons ensemble →
+              </button>
+              <p class="form-note" id="formNote"></p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p class="footer-logo">AR<span class="dot">.</span></p>
-        <p class="footer-copy">
-          © 2026 — Ando Rajohna — Antananarivo
-        </p>
-        <p class="footer-stack">React · Laravel · Python</p>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-logo">AR<span class="dot">.</span></p>
+          <p class="footer-copy">© 2026 — Ando Rajohna — Antananarivo</p>
+          <p class="footer-stack">React · Laravel · Python</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

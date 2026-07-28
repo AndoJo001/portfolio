@@ -50,8 +50,8 @@ body {
   /* cursor: none; */
 }
 
-/* Custom cursor 
-body::after {
+/* Custom cursor  */
+/* body::after {
   content: '';
   position: fixed;
   width: 10px;
@@ -758,6 +758,150 @@ h1, h2, h3, h4 {
 .project-card.wip {
   border-style: dashed;
   opacity: 0.8;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  background: var(--bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, var(--accent-dim), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.service-card:hover {
+  border-color: rgba(240, 165, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.service-card:hover::before { opacity: 1; }
+
+.service-number {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(240, 165, 0, 0.2);
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  user-select: none;
+}
+
+.service-icon {
+  font-size: 2rem;
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+.service-card > p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.service-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.service-features li {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  padding-left: 14px;
+  position: relative;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+}
+
+.service-cta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  transition: gap 0.3s, letter-spacing 0.3s;
+  display: inline-block;
+  margin-top: auto;
+  /* cursor: pointer; */
+}
+
+.service-cta:hover {
+  letter-spacing: 0.1em;
+}
+
+.services-note {
+  text-align: center;
+  padding: 28px 32px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(240, 165, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.services-note p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.services-note a {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; }
 }
 
 /* ===== CONTACT ===== */

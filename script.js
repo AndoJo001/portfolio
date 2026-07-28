@@ -44,6 +44,7 @@ mobileMenu.innerHTML = `
   <a href="#skills">Compétences</a>
   <a href="#experience">Expérience</a>
   <a href="#projects">Projets</a>
+  <a href="#services">Services</a>
   <a href="#contact">Me contacter</a>
 `;
 document.body.appendChild(mobileMenu);
