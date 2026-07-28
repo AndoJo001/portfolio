@@ -86,6 +86,10 @@ document.querySelectorAll('.reveal').forEach(el => {
 });
 
 // ===== FORMULAIRE CONTACT =====
+// ===== EMAILJS INIT =====
+emailjs.init('j09AaEuD5lVlvOygR');
+
+// ===== FORMULAIRE CONTACT =====
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 
@@ -97,7 +101,6 @@ if (contactForm) {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Validation basique
     if (!name || !email || !message) {
       formNote.style.color = '#ff6b6b';
       formNote.textContent = 'Veuillez remplir tous les champs.';
@@ -110,26 +113,46 @@ if (contactForm) {
       return;
     }
 
-    // Simulation d'envoi (remplacer par vrai backend si besoin)
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalText = btn.textContent;
     btn.textContent = 'Envoi en cours...';
     btn.disabled = true;
+    formNote.textContent = '';
 
-    setTimeout(() => {
-      btn.textContent = '✓ Message envoyé !';
-      btn.style.background = '#22c55e';
-      formNote.style.color = 'var(--accent)';
-      formNote.textContent = 'Merci ! Je vous répondrai dans les 24h.';
-      contactForm.reset();
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+      time: new Date().toLocaleString('fr-FR')
+    };
 
-      setTimeout(() => {
+    // Envoie le message à toi (Contact Us)
+    emailjs.send('service_mtdlkv4', 'template_cneugtj', templateParams)
+      .then(() => {
+        // Envoie l'auto-reply au visiteur
+        return emailjs.send('service_mtdlkv4', 'template_jdaa9m4', templateParams);
+      })
+      .then(() => {
+        btn.textContent = '✓ Message envoyé !';
+        btn.style.background = '#22c55e';
+        formNote.style.color = 'var(--accent)';
+        formNote.textContent = 'Merci ! Je vous répondrai dans les 24h.';
+        contactForm.reset();
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+          formNote.textContent = '';
+        }, 4000);
+      })
+      .catch((error) => {
+        console.error('EmailJS error:', error);
         btn.textContent = originalText;
-        btn.style.background = '';
         btn.disabled = false;
-        formNote.textContent = '';
-      }, 4000);
-    }, 1200);
+        formNote.style.color = '#ff6b6b';
+        formNote.textContent = 'Erreur lors de l\'envoi. Réessayez ou contactez-moi directement.';
+      });
   });
 }
 
