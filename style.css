@@ -50,20 +50,6 @@ body {
   /* cursor: none; */
 }
 
-/* Custom cursor  */
-/* body::after {
-  content: '';
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transition: transform 0.1s ease;
-  transform: translate(var(--cx, -100px), var(--cy, -100px)) translate(-50%, -50%);
-} */
-
 ::selection {
   background: var(--accent);
   color: var(--bg);
@@ -268,6 +254,44 @@ h1, h2, h3, h4 {
 }
 
 .nav-cta::after { display: none; }
+
+/* ===== LANG SWITCH ===== */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 16px;
+}
+
+.lang-sep {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lang-btn:hover {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.lang-btn.active {
+  background: var(--accent-dim);
+  border-color: rgba(240, 165, 0, 0.4);
+  color: var(--accent);
+}
 
 .burger {
   display: none;
@@ -792,6 +816,7 @@ h1, h2, h3, h4 {
   background: radial-gradient(circle at top right, var(--accent-dim), transparent 60%);
   opacity: 0;
   transition: opacity 0.4s;
+  pointer-events: none;
 }
 
 .service-card:hover {
