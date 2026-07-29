@@ -53,17 +53,7 @@ Je construis des applications web robustes (React + Laravel), j'intègre des pai
 
 ---
 
-## GitHub Stats
 
-<div align="center">
-
-![Ando's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndoJo001&show_icons=true&theme=dark&hide_border=true&bg_color=0d0d0f&title_color=f0a500&icon_color=f0a500&text_color=e8e8f0)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AndoJo001&layout=compact&theme=dark&hide_border=true&bg_color=0d0d0f&title_color=f0a500&text_color=e8e8f0)
-
-</div>
-
----
 
 ## Travaillons ensemble
 
